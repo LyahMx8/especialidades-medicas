@@ -62,9 +62,7 @@ public class cargarUsuario extends javax.swing.JFrame {
         especialBox.setVisible(false);
         Actualizar.setVisible(false);
         AbrirDB();
-        asegurarColumnaRutaFoto();
-        asegurarColumnaCorreo();
-        asegurarColumnaTipoUsuario();
+        updateColumnaTipoUsuario();
         bordeCedula = cedula.getBorder();
         bordeNombre = nombre.getBorder();
         bordeCorreo = correo.getBorder();
@@ -737,41 +735,7 @@ public class cargarUsuario extends javax.swing.JFrame {
         especialidad.setBorder(especialidadValida ? bordeEspecialidad : BorderFactory.createLineBorder(COLOR_ERROR));
     }
 
-    private void asegurarColumnaRutaFoto() {
-        String alter = "ALTER TABLE USUARIOS ADD COLUMN RUTA_FOTO VARCHAR(500)";
-        try (Statement st = conn.createStatement()) {
-            st.executeUpdate(alter);
-        } catch (SQLException ex) {
-            // Derby: X0Y32, MySQL: 42S21 cuando la columna ya existe.
-            if (!"X0Y32".equals(ex.getSQLState()) && !"42S21".equals(ex.getSQLState())) {
-                Logger.getLogger(cargarUsuario.class.getName()).log(Level.SEVERE, null, ex);
-            }
-        }
-    }
-
-    private void asegurarColumnaCorreo() {
-        String alter = "ALTER TABLE USUARIOS ADD COLUMN CORREO VARCHAR(180)";
-        try (Statement st = conn.createStatement()) {
-            st.executeUpdate(alter);
-        } catch (SQLException ex) {
-            // Derby: X0Y32, MySQL: 42S21 cuando la columna ya existe.
-            if (!"X0Y32".equals(ex.getSQLState()) && !"42S21".equals(ex.getSQLState())) {
-                Logger.getLogger(cargarUsuario.class.getName()).log(Level.SEVERE, null, ex);
-            }
-        }
-    }
-
-    private void asegurarColumnaTipoUsuario() {
-        String alter = "ALTER TABLE USUARIOS ADD COLUMN TIPO_USUARIO VARCHAR(30) DEFAULT 'Paciente'";
-        try (Statement st = conn.createStatement()) {
-            st.executeUpdate(alter);
-        } catch (SQLException ex) {
-            // Derby: X0Y32, MySQL: 42S21 cuando la columna ya existe.
-            if (!"X0Y32".equals(ex.getSQLState()) && !"42S21".equals(ex.getSQLState())) {
-                Logger.getLogger(cargarUsuario.class.getName()).log(Level.SEVERE, null, ex);
-            }
-        }
-
+    private void updateColumnaTipoUsuario() {
         String actualizarNulos = "UPDATE USUARIOS SET TIPO_USUARIO = 'Paciente' WHERE TIPO_USUARIO IS NULL OR TRIM(TIPO_USUARIO) = ''";
         try (Statement st = conn.createStatement()) {
             st.executeUpdate(actualizarNulos);

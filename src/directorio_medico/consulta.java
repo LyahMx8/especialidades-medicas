@@ -33,8 +33,18 @@ public class consulta extends javax.swing.JFrame {
     private boolean ordenAscendente = true;
 
     public consulta() {
-        TablaUsr = new DefaultTableModel(null, getColumnas());
-        TablaEsp = new DefaultTableModel(null, getColumnas2());    
+        TablaUsr = new DefaultTableModel(null, getColumnas()) {
+            @Override
+            public boolean isCellEditable(int row, int column) {
+                return false;
+            }
+        };
+        TablaEsp = new DefaultTableModel(null, getColumnas2()) {
+            @Override
+            public boolean isCellEditable(int row, int column) {
+                return false;
+            }
+        };
         AbrirDB();
         setUsr();
         setEsp();
@@ -256,6 +266,7 @@ public class consulta extends javax.swing.JFrame {
     private void configurarAccionesListado() {
         sorterUsuarios = new TableRowSorter<>(TablaUsr);
         jTable2.setRowSorter(sorterUsuarios);
+        jTable2.setDefaultEditor(Object.class, null);
         cargarEspecialidadesEnCombo();
 
         // Reengancha doble clic porque el formulario actual no tiene el listener de mouse declarado.

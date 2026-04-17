@@ -95,7 +95,7 @@ public class conexion {
     }
 
     private static void validarCampo(String valor, String nombreCampo) {
-        if (nombreCampo != "password" && (valor == null || valor.trim().isEmpty())) {
+        if (!"password".equals(nombreCampo) && (valor == null || valor.trim().isEmpty())) {
             throw new IllegalStateException("El campo '" + nombreCampo + "' en env.json es obligatorio.");
         }
     }
