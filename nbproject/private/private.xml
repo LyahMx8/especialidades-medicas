@@ -5,6 +5,9 @@
         <group>
             <file>file:/C:/Users/eliana/Downloads/SubirArchivos/src/subirarchivos/SubirArchivo.java</file>
         </group>
-        <group name="Java"/>
+        <group name="Java">
+            <file>file:/D:/Disco/Proyectos/Java/SubirArchivos/src/directorio_medico/pdf.java</file>
+            <file>file:/D:/Disco/Proyectos/Java/SubirArchivos/src/directorio_medico/Menu.java</file>
+        </group>
     </open-files>
 </project-private>
