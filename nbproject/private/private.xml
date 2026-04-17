@@ -5,13 +5,6 @@
         <group>
             <file>file:/C:/Users/eliana/Downloads/SubirArchivos/src/subirarchivos/SubirArchivo.java</file>
         </group>
-        <group name="Java">
-            <file>file:/D:/Disco/Proyectos/Java/SubirArchivos/src/subirarchivos/Menu.java</file>
-            <file>file:/D:/Disco/Proyectos/Java/SubirArchivos/src/subirarchivos/Subida.java</file>
-            <file>file:/D:/Disco/Proyectos/Java/SubirArchivos/src/subirarchivos/SubirArchivo.java</file>
-            <file>file:/D:/Disco/Proyectos/Java/SubirArchivos/src/subirarchivos/agregarArch.java</file>
-            <file>file:/D:/Disco/Proyectos/Java/SubirArchivos/src/subirarchivos/conexion.java</file>
-            <file>file:/D:/Disco/Proyectos/Java/SubirArchivos/src/subirarchivos/consulta.java</file>
-        </group>
+        <group name="Java"/>
     </open-files>
 </project-private>
