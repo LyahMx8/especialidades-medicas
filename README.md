@@ -1,17 +1,11 @@
 # Herramienta de Gestion Medica
 
-<img width="345" height="430" alt="image" src="https://github.com/user-attachments/assets/140a7b07-f7b5-41be-ab09-91e814bc72b3" />
+<img width="345" float="left" alt="image" src="https://github.com/user-attachments/assets/140a7b07-f7b5-41be-ab09-91e814bc72b3" />
 
-<img width="442" height="516" alt="image" src="https://github.com/user-attachments/assets/4d453f87-1c46-4f02-b9d7-92130edd6a99" />
+<img width="345" float="left" alt="image" src="https://github.com/user-attachments/assets/4d453f87-1c46-4f02-b9d7-92130edd6a99" />
 
-<img width="833" height="515" alt="image" src="https://github.com/user-attachments/assets/76e4b408-38ad-45b9-9098-2cc76654c8da" />
+<img width="345" float="left" alt="image" src="https://github.com/user-attachments/assets/76e4b408-38ad-45b9-9098-2cc76654c8da" />
 
-
-<video width="320" height="240" controls>
-  <source src="https://github.com/LyahMx8/especialidades-medicas/blob/master/Especialidades%20Médicas.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-[movie.mp4](https://github.com/LyahMx8/especialidades-medicas/blob/master/Especialidades%20Médicas.mp4)
 
 Aplicacion de escritorio en Java Swing para gestionar usuarios, especialidades y consultas de datos locales, con una vista adicional para consultar una red medica global desde API.
 
