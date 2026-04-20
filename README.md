@@ -6,6 +6,9 @@
 
 <img width="345" float="left" alt="image" src="https://github.com/user-attachments/assets/76e4b408-38ad-45b9-9098-2cc76654c8da" />
 
+<img width="345"  float="left" height="530" alt="image" src="https://github.com/user-attachments/assets/bb239619-354b-4fc9-b820-a942cd4d0972" />
+
+
 
 Aplicacion de escritorio en Java Swing para gestionar usuarios, especialidades y consultas de datos locales, con una vista adicional para consultar una red medica global desde API.
 
