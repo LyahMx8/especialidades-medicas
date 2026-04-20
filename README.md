@@ -75,11 +75,8 @@ Punto de entrada actual:
 
 -- Los datos de conexión los toma de env.json
 
-### 2) Evolucion de esquema de BD
 
-Se normalizan nulos de TIPO_USUARIO a Paciente.
-
-### 3) Modelo de datos
+### 2) Modelo de datos
 
 - USUARIOS
   - CEDULA (clave de negocio)
@@ -91,14 +88,14 @@ Se normalizan nulos de TIPO_USUARIO a Paciente.
 
 La consulta usa LEFT JOIN para no perder usuarios sin especialidad asignada.
 
-### 4) Validacion y UX
+### 3) Validacion y UX
 
-- Validacion en tiempo real con bordes de error en cargarUsuario.java a medida que se teclea en los campos.
+- Validacion en tiempo real empleando regex, aplicando bordes de error en cargarUsuario.java a medida que se teclea en los campos.
 = Limpieza de tablas una vez enviados los datos
 - Las reglas de negocio y validaciones de datos estan en validaciones de estado de controles y en regex, tambien el consumo de json se usa.
 - En consulta.java se uso TableRowSorter + RowFilter para evitar recargar todo desde BD por cada filtro.
 
-### 5) Streams aplicados al caso real
+### 4) Streams aplicados al caso real
 
 La actividad de lambdas con stream se integró en la clase de consulta:
 
@@ -108,16 +105,16 @@ La actividad de lambdas con stream se integró en la clase de consulta:
 - Se ordena alfabeticamente.
 - Se imprime resultado en consola.
 
-Esto permitio aterrizar el ejercicio de clase en un flujo funcional de producto.
+Esto permitio aterrizar el ejercicio de clase en un flujo funcional del producto.
 
-### 6) Exportacion de ficha
+### 5) Exportacion de ficha de usuario
 
 pdf.java genera un archivo HTML por cedula en src/reportes.
 
-Nota practica:
-- Aunque la clase se llama pdf, el artefacto generado es HTML por motivo de práctica.
+Nota:
+- Aunque la clase se llama pdf, el artefacto generado es HTML por motivo de práctica en un ejercicio de clase.
 
-### 7) Integracion con API externa
+### 6) Integracion con API externa
 
 DirectorioMedico.java consume el api RandomUser con HttpURLConnection y se parsea manualmente el JSON a través de regex.
 
