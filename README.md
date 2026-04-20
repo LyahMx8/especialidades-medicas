@@ -1,18 +1,18 @@
 # Herramienta de Gestion Medica
 
-<img width="345" float="left" alt="image" src="https://github.com/user-attachments/assets/140a7b07-f7b5-41be-ab09-91e814bc72b3" />
-
-<img width="345" float="left" alt="image" src="https://github.com/user-attachments/assets/4d453f87-1c46-4f02-b9d7-92130edd6a99" />
-
-<img width="345" float="left" alt="image" src="https://github.com/user-attachments/assets/76e4b408-38ad-45b9-9098-2cc76654c8da" />
-
-<img width="345"  float="left" height="530" alt="image" src="https://github.com/user-attachments/assets/bb239619-354b-4fc9-b820-a942cd4d0972" />
-
-
-
 Aplicacion de escritorio en Java Swing para gestionar usuarios, especialidades y consultas de datos locales, con una vista adicional para consultar una red medica global desde API.
 
 Este repositorio esta armado como proyecto NetBeans (Ant), con formularios Swing generados y logica de negocio escrita a mano sobre JDBC.
+
+
+<img width="340" float="left" alt="image" src="https://github.com/user-attachments/assets/140a7b07-f7b5-41be-ab09-91e814bc72b3" />
+
+<img width="340" float="left" alt="image" src="https://github.com/user-attachments/assets/4d453f87-1c46-4f02-b9d7-92130edd6a99" />
+
+<img width="340" float="left" alt="image" src="https://github.com/user-attachments/assets/76e4b408-38ad-45b9-9098-2cc76654c8da" />
+
+<img width="340"  float="left" alt="image" src="https://github.com/user-attachments/assets/bb239619-354b-4fc9-b820-a942cd4d0972" />
+
 
 ## Alcance actual del proyecto
 
